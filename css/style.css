@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+:root {
+    --colorTextSecondary: floralwhite;
+
+    --colorPrimary: #20408A;
+    --colorSecondary: #BEBCBC;
+    --colorTertiary: whitesmoke;
+    --colorExtra:#7372d4;
+}
+
+fieldset{
+    margin-top: 1%;
+	margin-right: 0%;
+    margin-left: 1%;
+    border-radius: 0.5rem;
+    float:left;
+    width: 30%;
+    height: 80px;
+}
+@media screen and (max-width: 1232px) {
+    fieldset {
+        float: none;
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 576px) {
+    fieldset {
+        margin-left: 15%;
+        width: 70%;
+    }
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+header {
+    padding: 0.5rem 0 0.5rem 2rem;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+    text-align: center;
+}
+
+main {
+    padding: 0.5rem 1rem;
+    line-height: 1.4rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+    text-align: center;
+}
+
+.list_out{
+    margin-top:1%;
+    text-align: center;
+    float:left;
+    width: 25%;
+    height: 400px;
+}
+@media screen and (max-width: 870px) {
+    .list_out {
+        float: none;
+        margin-left: 35%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .list_out {
+        margin-left: 15%;
+        text-align: center;
+        width:unset;
+    }
+}
+
+#all_search{
+    background-color:var(--colorExtra);   
+    height: 135px;
+    border-radius: 0.5rem;
+}
+@media screen and (max-width: 1235px) {
+    #all_search {
+        height: 350px;
+        padding-top: 5px;
+    }
+}
+
+.modal{
+    overflow-y: scroll; 
+    width: 400px; 
+    height: 500px;
+    position:unset ;
+
+}
+.modal a.close-modal {
+    position:fixed !important;
+    top: 2px !important;
+    right: 2px !important;
+}
